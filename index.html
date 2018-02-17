@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 text-center">
+          <input type="text" id="place-search" class="form-control input-lg">
+          <div id="map"></div>
+          <input id="btn-weather" class="btn btn-primary btn-lg" type="button" value="my weather">
+      </div>
+      <div class="col-xs-12 col-sm-4 text-center">
+          <div class="list-group">
+              <a href="#" class="list-group-item active"><strong>Temperature:  </strong><span id="temperature"></span></a>
+              <a href="#" class="list-group-item"><strong>Timezone:  </strong><span id="timezone"></span></a>
+              <a href="#" class="list-group-item"><strong>Summary:  </strong><span id="summary"></span></a>
+              <a href="#" class="list-group-item"><strong>Humidity:  </strong><span id="humidity"></span></a>
+              <a href="#" class="list-group-item"><strong>PrecipProbability:  </strong><span id="precipProbability"></span></a>
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADG3FpG0f_1kVZaqT7qXH_DJhbHufHmww&callback=initMap&libraries=places" async
+    defer></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
